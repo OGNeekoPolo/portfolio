@@ -1,0 +1,31 @@
+%nav.navbar.navbar-expand-lg.navbar-light
+  %a.navbar-brand{:href => "#"}
+    = image_tag('logos/portfolio-logo.png', width: '60', height: '30', class: "d-inline-block align-top")
+  %button.navbar-toggler{"aria-controls" => "navbarNavAltMarkup", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarNavAltMarkup", "data-toggle" => "collapse", :type => "button"}
+    %span.navbar-toggler-icon
+  #navbarNavAltMarkup.collapse.navbar-collapse
+    .navbar-nav
+      = link_to 'Home', home_path, class: "nav-item nav-link"
+      %a.nav-item.nav-link.active{:href => "/story"}
+        My Story
+        %span.sr-only (current)
+      = link_to 'My Work', work_path, class: "nav-item nav-link"
+.content
+  %br/
+  %br/
+  .container
+    %h1.welcome.row.justify-content-center My Story
+    %br/
+    .row.justify-content-center
+      = image_tag('slideshow/story-pic.png')
+    %br/
+    %p
+      = markdown("I went to Lawrence Central High School and had a computer teacher who noticed that I was a little bit more proficient with computer applications. I did all the extra credit. I had a 106 percent in the class. I would help him with people who were struggling. I just enjoyed it. He let me know I had a gift for this stuff. It manifested into a love.")
+    %p
+      = markdown("When I went off to college, I wanted to be a computer programmer or do computer science. I got a full ride to Southern University and A&M College in Baton Rouge to play football. I ended up getting injured and coming back home because I couldn’t play. I wound up going to Vincennes. I felt the pressure to get something and ended up switching my major to business management. Honestly, I really don’t like business management, but it was something to get me on track to at least graduate.")
+    %p
+      = markdown("I got into the workforce and started working for retail shoe stores. In 2015, I ended up becoming a manager for City Gear. Then came the complacency. Two years of retail management can weigh on you. I felt it was time for a change.")
+    %p
+      = markdown("Coding boot camps were starting to pop up. I went down to the Iron Yard just to check it out; man was I ever surprised. They cared what I wanted out of this program, which was really to better myself and actually start doing what I set out to do years ago and bring my dream full circle. After more than a few visits to campus, the seeds had been sown, and I was more than ready to dive head first into the world of coding.")
+    %p
+      = markdown("Looking back on the entire 12 week experience, it was definitely the best decision I have ever made. With that being said, graduating was definitely one of the best achievements of my life. Spending all of that time around something you love never really seems like work. Now, don't get me wrong, I’m not going to say there haven’t been days where I wanted to pull my hair out. But it was always a good struggle. It’s almost like training for something you want to be really good at. When you struggle, you know you’re about to break through a wall and learn something and be enlightened. Being in that environment, surrounded by people who are passionate about code, it was just an all-around great experience.")

@@ -1,0 +1,29 @@
+%nav.navbar.navbar-expand-lg.navbar-light
+  %a.navbar-brand{:href => "#"}
+    = image_tag('logos/portfolio-logo.png', width: '60', height: '30', class: "d-inline-block align-top")
+  %button.navbar-toggler{"aria-controls" => "navbarNavAltMarkup", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarNavAltMarkup", "data-toggle" => "collapse", :type => "button"}
+    %span.navbar-toggler-icon
+  #navbarNavAltMarkup.collapse.navbar-collapse
+    .navbar-nav
+      %a.nav-item.nav-link.active{:href => "#"}
+        Home
+        %span.sr-only (current)
+      = link_to 'My Story', story_path, class: "nav-item nav-link"
+      = link_to 'My Work', work_path, class: "nav-item nav-link"
+.content
+  %br/
+  %br/
+  .container
+    %h1.welcome.row.justify-content-center Welcome To My Portfolio
+    %br/
+    .row.justify-content-center
+      = image_tag('slideshow/headshot.png')
+    %br
+    %h1.salutation.row.justify-content-center Hey! My name is Nik!
+    %em.comment.row.justify-content-center (Yes without the 'c'. I'm unique already!)
+    %br/
+    = render :partial => 'portfolio/contact'
+    %h2 About Me:
+    .container
+      = render :partial => 'portfolio/aboutme'
+      = render :partial => 'portfolio/hobbies'

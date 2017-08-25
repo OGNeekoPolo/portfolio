@@ -1,0 +1,12 @@
+%nav.navbar.navbar-expand-lg.navbar-light
+  %a.navbar-brand{:href => "#"}
+    = image_tag('logos/portfolio-logo.png', width: '60', height: '30', class: "d-inline-block align-top")
+  %button.navbar-toggler{"aria-controls" => "navbarNavAltMarkup", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarNavAltMarkup", "data-toggle" => "collapse", :type => "button"}
+    %span.navbar-toggler-icon
+  #navbarNavAltMarkup.collapse.navbar-collapse
+    .navbar-nav
+      = link_to 'Home', home_path, class: "nav-item nav-link"
+      = link_to 'My Story', story_path, class: "nav-item nav-link"
+      %a.nav-item.nav-link.active{:href => "/work"}
+        My Work
+        %span.sr-only (current)

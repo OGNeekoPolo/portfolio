@@ -1,0 +1,30 @@
+// Place all the styles related to the portfolio controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+
+
+.content {
+  background: #FFB238;
+}
+
+.welcome {
+  font-family: 'Baloo Bhaijaan', serif;
+}
+
+.container {
+  img {
+    width: 30%;
+    height: 35%;
+  }
+  .salutation {
+    font-family: 'Ubuntu', serif;
+  }
+}
+
+.item-slide {
+  img {
+    height: 35%;
+    width: 30%;
+  }
+}
