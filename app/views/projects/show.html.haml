@@ -1,0 +1,24 @@
+= render :partial => 'nav_bar'
+.content
+  %br/
+  .container
+    .row
+      .col-sm-8
+        = image_tag(@project.image)
+      .col-sm-4
+        %h1= @project.title
+        %p= @project.description
+        .detail-menu
+          %a{:href => "/projects"}
+            %span Return To Projects
+          %br/
+          %a{:href => "#{@project.live_site}"}
+            %span Launch Project
+          %br/
+          %a{:href => "#{@project.source_code}"}
+            %span View on GitHub
+          %br/
+          %span Tools
+          %ul
+            - @tools.each do |tool|
+              %li= tool.name

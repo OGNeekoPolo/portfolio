@@ -9,7 +9,7 @@
         Home
         %span.sr-only (current)
       = link_to 'My Story', story_path, class: "nav-item nav-link"
-      = link_to 'My Work', work_path, class: "nav-item nav-link"
+      = link_to 'My Work', projects_path, class: "nav-item nav-link"
 .content
   %br/
   %br/
@@ -17,7 +17,7 @@
     %h1.welcome.row.justify-content-center Welcome To My Portfolio
     %br/
     .row.justify-content-center
-      = image_tag('slideshow/headshot.png')
+      = image_tag('slideshow/headshot.png', class: "free-pic")
     %br
     %h1.salutation.row.justify-content-center Hey! My name is Nik!
     %em.comment.row.justify-content-center (Yes without the 'c'. I'm unique already!)

@@ -1,8 +1,13 @@
 %em.comment.row.justify-content-center
-  %strong Phone: 317-410-5799
+  = evil_icon 'ei-chart', size: :s, class: "custom-class"
+  317-410-5799
 %em.comment.row.justify-content-center
-  %strong Email: nktrabue@gmail.com
+  = evil_icon 'ei-envelope', size: :s, class: "custom-class"
+  %a{:href => "mailto:nktrabue@gmail.com"}
+    nktrabue@gmail.com
 %em.comment.row.justify-content-center
-  %strong= markdown("GitHub: [Click Here](http://www.github.com/OGNeekoPolo)")
+  = evil_icon 'ei-sc-github', size: :s, class: "custom-class"
+  %a{:href => "http://www.github.com/OGNeekoPolo"} Click Here
 %em.comment.row.justify-content-center
-  %strong= markdown("LinkedIn: [Click Here](https://www.linkedin.com/in/nikolas-trabue-12b814144/)")
+  = evil_icon 'ei-sc-linkedin', size: :s, class: "custom-class"
+  = markdown("[Click Here](https://www.linkedin.com/in/nikolas-trabue-12b814144/)")

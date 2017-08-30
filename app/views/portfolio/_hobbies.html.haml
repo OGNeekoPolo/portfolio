@@ -1,11 +1,3 @@
 .container
   %h3 Hobbies:
-  = markdown("-  Sports (And I mean ALL sports)")
-  = markdown("-  Family (I'm a Family Guy...no pun intended)")
-  = markdown("-  Coding (My passion)")
-  = markdown("-  Shoes (I can talk shoes for DAYS!)")
-  %marquee#slideshow
-    .item-slide
-      = image_tag('slideshow/family-pic.png')
-      = image_tag('slideshow/mylove.png')
-      = image_tag('slideshow/AJ1.png')
+  = render :partial => 'accordian'

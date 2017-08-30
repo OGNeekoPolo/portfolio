@@ -9,9 +9,12 @@
     <%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Ubuntu' %>
 
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= evil_icons_sprite %>
   </head>
 
   <body>
     <%= yield %>
+    <br>
+    <%= render :partial => 'portfolio/footer' %>
   </body>
 </html>

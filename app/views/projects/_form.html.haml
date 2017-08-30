@@ -1,0 +1,30 @@
+= form_for @project do |p|
+  .container
+    .form-group
+      = p.label :title
+      = p.text_field :title, class: "form-control"
+      - if p.object.image?
+        = image_tag p.object.image.thumb.url
+        = p.label :remove_image
+        = p.check_box :remove_image
+    .form-group
+      = p.label :description
+      = p.text_area :description, class: "form-control"
+    .form-group
+      = p.label :image
+      = p.file_field :image, class: "form-control"
+    .form-group
+      = p.label :live_site
+      = p.text_area :live_site, class: "form-control"
+    .form-group
+      = p.label :source_code
+      = p.text_area :source_code, class: "form-control"
+    .container
+      .form-group
+        = p.label "Tools"
+        = p.collection_check_boxes :tool_ids, Tool.all, :id, :name do |b|
+          .collection_check_box
+            = b.label
+            = b.check_box
+    .actions
+      = p.submit

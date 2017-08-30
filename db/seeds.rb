@@ -5,3 +5,50 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Tool.create(
+  name: "Ruby"
+)
+
+Tool.create(
+  name: "Rails"
+)
+
+Tool.create(
+  name: "HTML"
+)
+
+Tool.create(
+  name: "CSS"
+)
+
+Tool.create(
+  name: "Bootstrap"
+)
+
+Tool.create(
+  name: "Node.JS"
+)
+
+Tool.create(
+  name: "MongoDB"
+)
+
+Tool.create(
+  name: "JavaScript"
+)
+
+Tool.create(
+  name: "PostgreSQL"
+)
+
+Tool.create(
+  name: "Mongoose"
+)
+
+Tool.create(
+  name: "API Work"
+)
+
+Tool.create(
+  name: "React"
+)

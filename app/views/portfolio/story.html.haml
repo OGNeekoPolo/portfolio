@@ -9,7 +9,7 @@
       %a.nav-item.nav-link.active{:href => "/story"}
         My Story
         %span.sr-only (current)
-      = link_to 'My Work', work_path, class: "nav-item nav-link"
+      = link_to 'My Work', projects_path, class: "nav-item nav-link"
 .content
   %br/
   %br/
@@ -17,7 +17,7 @@
     %h1.welcome.row.justify-content-center My Story
     %br/
     .row.justify-content-center
-      = image_tag('slideshow/story-pic.png')
+      = image_tag('slideshow/story-pic.png', class: "free-pic")
     %br/
     %p
       = markdown("I went to Lawrence Central High School and had a computer teacher who noticed that I was a little bit more proficient with computer applications. I did all the extra credit. I had a 106 percent in the class. I would help him with people who were struggling. I just enjoyed it. He let me know I had a gift for this stuff. It manifested into a love.")
@@ -29,3 +29,7 @@
       = markdown("Coding boot camps were starting to pop up. I went down to the Iron Yard just to check it out; man was I ever surprised. They cared what I wanted out of this program, which was really to better myself and actually start doing what I set out to do years ago and bring my dream full circle. After more than a few visits to campus, the seeds had been sown, and I was more than ready to dive head first into the world of coding.")
     %p
       = markdown("Looking back on the entire 12 week experience, it was definitely the best decision I have ever made. With that being said, graduating was definitely one of the best achievements of my life. Spending all of that time around something you love never really seems like work. Now, don't get me wrong, I’m not going to say there haven’t been days where I wanted to pull my hair out. But it was always a good struggle. It’s almost like training for something you want to be really good at. When you struggle, you know you’re about to break through a wall and learn something and be enlightened. Being in that environment, surrounded by people who are passionate about code, it was just an all-around great experience.")
+    %p
+      = markdown("While The Iron Yard’s closure is shocking and a bit jarring for myself and every student that has come through the doors, I don’t want people to think that it was a worthless program that went under. The skills and knowledge that I learned while enrolled in The Iron Yard are second to none, and should not be overlooked due to a decision that came from higher up on the corporate ladder.")
+    %p
+      = markdown("Just thinking about the future gets me kind of excited. I feel like I am finally in the field I’ve been meant to be in. I came into the whole ordeal kind of thinking about making more money, but if I have learned anything about developing/software engineering, its that it opens your eyes and lets you know you can leave your mark on the world. You can make something that outlasts you and it can benefit people and humanity for years to come. It’s almost staggering, the possibilities. There’s just so many issues in the world. If I could contribute to one of them, I’d be happy, even if it seems minor.")

@@ -3,22 +3,37 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap";
 
-
-.content {
-  background: #FFB238;
-}
-
-.welcome {
-  font-family: 'Baloo Bhaijaan', serif;
-}
-
-.container {
+#family {
   img {
+    width: 35%;
+    height: 30%;
+  }
+}
+
+#coding {
+  height: 35%;
+  width: 30%;
+}
+
+#sneakers2 {
+  height: 35%;
+  width: 30%;
+}
+
+#sneakers1 {
+  height: 45%;
+  width: 30%;
+}
+
+.sports {
+  height: 35%;
+  width: 30%
+}
+
+.row {
+  .free-pic {
     width: 30%;
     height: 35%;
-  }
-  .salutation {
-    font-family: 'Ubuntu', serif;
   }
 }
 

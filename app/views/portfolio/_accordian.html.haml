@@ -1,0 +1,45 @@
+#accordion{:role => "tablist"}
+  .card
+    #headingOne.card-header{:role => "tab"}
+      %h5.mb-0
+        %a{"aria-controls" => "collapseOne", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapseOne"}
+          Sports
+    #collapseOne.collapse.show{"aria-labelledby" => "headingOne", "data-parent" => "#accordion", :role => "tabpanel"}
+      .row.container
+        = image_tag('slideshow/football.png', class: "col-sm-4 card-img sports")
+        .col-sm-8.card-body
+          Sports has always been a major part of my life; football being the main source. I approach every aspect of my life with the same intensity and dilligence that I used to become Top 50 in the state back in 2009 (you can look this up). I always strive to be the best in anything I do. Whether it's delivering hits on the field, or delivering solutions from my computer.
+  .card
+    #headingTwo.card-header{:role => "tab"}
+      %h5.mb-0
+        %a.collapsed{"aria-controls" => "collapseTwo", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapseTwo"}
+          Family
+    #collapseTwo.collapse{"aria-labelledby" => "headingTwo", "data-parent" => "#accordion", :role => "tabpanel"}
+      .container
+        .row
+          .card-body
+            Family is very important to me. It's the main reason why I am who I am today. Ever since I started this journey to fulfill my dreams, my family has been with me each and every step of the way. The first picture below is of: (from top to bottom) my Grandmother, my Aunt, and my older sister with my niece. The second picture is one of my beautiful fiance who has been my backbone since day one. The third picture is one of my favorite family holiday, Chirstmas. I love it because it is one of the only times a year my ENTIRE family gets together.
+        .row#family
+          = image_tag('slideshow/ladies', class: "col-sm-4 card-img")
+          = image_tag('slideshow/fiance', class: "col-sm-4 card-img")
+          = image_tag('slideshow/family-pic', class: "col-sm-4 card-img")
+  .card
+    #headingThree.card-header{:role => "tab"}
+      %h5.mb-0
+        %a.collapsed{"aria-controls" => "collapseThree", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapseThree"}
+          Coding & Developing
+    #collapseThree.collapse{"aria-labelledby" => "headingThree", "data-parent" => "#accordion", :role => "tabpanel"}
+      .container.row
+        .card-body.col-sm-8
+          When I started this journey to become a developer, I was really just looking to make a career change in order to better my life. However, ever since I dove head first into this wild world of developing, I haven't been able to stay off of my computer. I have grown to love coding so much that, in a sense, it is almost therapeutic. I have always had a strong love for everything technological, but I never thought that I would grow to enjoy development this much. I plan to take this passion and continue to grow my skills. The learning will never stop...
+        = image_tag('slideshow/coding', class: "col-sm-4 card-img rounded-circle align-self-center", id: "coding")
+  .card
+    #headingFour.card-header{:role => "tab"}
+      %h5.mb-0
+        %a.collapsed{"aria-controls" => "collapseFour", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapseFour"}
+          Sneakers
+    #collapseFour.collapse{"aria-labelledby" => "headingFour", "data-parent" => "#accordion", :role => "tabpanel"}
+      .container.row
+        = image_tag('slideshow/AJ1', class: "col-sm-4 align-self-center", id: "sneakers1")
+        .card-body.col-sm-8
+          When I started this journey to become a developer, I was really just looking to make a career change in order to better my life. However, ever since I dove head first into this wild world of developing, I haven't been able to stay off of my computer. I have grown to love coding so much that, in a sense, it is almost therapeutic. I have always had a strong love for everything technological, but I never thought that I would grow to enjoy development this much. I plan to take this passion and continue to grow my skills. The learning will never stop...
