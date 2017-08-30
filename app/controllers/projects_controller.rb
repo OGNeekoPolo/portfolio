@@ -1,4 +1,6 @@
 class ProjectsController < ApplicationController
+  http_basic_authenticate_with name: "OGNeeko", password: "number45", except: [:index, :show]
+
   def index
     @projects = Project.all
   end
@@ -20,7 +22,6 @@ class ProjectsController < ApplicationController
   def show
     @project = Project.find(params[:id])
     @tools = @project.tools
-
   end
 
   def edit
