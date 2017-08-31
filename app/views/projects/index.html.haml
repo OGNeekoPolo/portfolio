@@ -4,9 +4,9 @@
     %br/
     %h1.welcome.row.justify-content-center Projects
     %br/
-    .row
+    .d-flex.justify-content-around
       - @projects.each do |project|
-        .col-sm-4
+        .col-xs-12
           .card{:style => "width: 20rem;"}
             = image_tag(project.image, class: "card-img-top")
             .card-body
