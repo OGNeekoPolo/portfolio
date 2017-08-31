@@ -7,7 +7,7 @@
     .row
       - @projects.each do |project|
         .col-12.col-md-6.col-xl-4.d-flex.justify-content-center
-          .card{:style => "width: 20rem;"}
+          .card.project-card{:style => "width: 20rem;"}
             = image_tag(project.image, class: "card-img-top")
             .card-body
               %h4.card-title= project.title
