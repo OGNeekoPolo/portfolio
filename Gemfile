@@ -24,8 +24,7 @@ gem 'jquery-rails'
 gem 'redcarpet'
 gem 'carrierwave'
 gem 'mini_magick'
-gem 'evil_icons'
-gem 'fog', '~> 1.0.0'
+gem 'carrierwave-aws'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
